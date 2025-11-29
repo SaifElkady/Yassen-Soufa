@@ -1,0 +1,158 @@
+@import "styles-global.css";
+
+  
+  .title {
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: black;
+  }
+  
+  .about-section {
+  padding: 90px 10%;
+  background: rgb(255, 255, 255)
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-container img {
+  width: 420px;
+  border-radius: 8px;
+  object-fit: cover;
+  position: relative;
+  bottom: 40px;
+}
+
+.about-text h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #000000;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 550px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+footer{
+  height: 8vh;
+  background-color: #e0dfdf;
+}
+
+footer a{
+  padding: 20px;
+  color: #000000;
+  font-size: large;
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-top: 90px;
+  }
+  
+  .about-section {
+    padding: 20px 20px 40px;
+  }
+  
+  .about-container {
+    padding: 30px 20px;
+  }
+  
+  .about-text h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+/* Media Queries for Responsiveness (Mobile View) */
+@media (max-width: 768px) {
+    /* Header adjustments for smaller screens */
+    header {
+        padding: 0 5%;
+    }
+
+    .menu-btn {
+        display: block; /* Show menu button */
+    }
+
+    nav {
+        position: absolute;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav.active {
+        display: flex; /* Show when active */
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 10px 5%;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Main Content adjustments */
+    .title {
+        text-align: center;
+        margin-top: calc(var(--header-height) + 20px);
+        font-size: 2em;
+    }
+
+    .about-section {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        width: 90%;
+    }
+
+    .about-image {
+        flex: 0 0 100%; /* Image takes full width */
+        padding-right: 0;
+        margin-bottom: 30px;
+        order: 1;
+        max-width: 400px; /* Constraint image size on small screens */
+    }
+
+    .about-container {
+        flex: 0 0 100%; /* Text takes full width */
+        order: 2;
+    }
+
+    .about-text h1 {
+        text-align: center;
+    }
+}
