@@ -1,0 +1,137 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #0a0a0a;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================= HEADER ================= */
+header {
+  width: 100%;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 87, 255, 0.22);
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0057ff;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #0057ff;
+  text-shadow: 0 0 10px rgba(0, 121, 255, 0.6);
+}
+
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  color: #0057ff;
+  cursor: pointer;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 70px 10%;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  color: #0057ff;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #0057ff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px) {
+  nav {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: #0057ff;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-left: 2px solid white;
+    transition: .4s;
+  }
+
+  nav a {
+    color: white;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* ================= ANIMATIONS AND SHARED CLASSES ================= */
+.fade-up {
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.fade-up.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card {
+  transition: transform 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive tweaks for images */
+.work img, .about-container img, .rajaproject img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
