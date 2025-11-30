@@ -85,22 +85,23 @@ footer {
 @media(max-width:900px) {
 
   nav {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center;     /* center horizontally */
     align-items: center;
     text-align: center;
-    width: 100%;
+    gap: 20px;                   /* even spacing between links */
   }
 
   nav a {
-    margin: 0 10px;
+    font-size: 17px;
   }
 
   .logo {
-    display: none;
+    display: none;               /* remove the logo on mobile */
   }
-}
 
+}
 
 /* ================= ANIMATIONS AND SHARED CLASSES ================= */
 .fade-up {
@@ -129,6 +130,7 @@ footer {
   height: auto;
 
 }
+
 
 
 
