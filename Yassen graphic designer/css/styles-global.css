@@ -85,8 +85,8 @@ footer {
 @media(max-width:900px) {
   .logo {
    display: none;
-}
   }
+}
 
 
 /* ================= ANIMATIONS AND SHARED CLASSES ================= */
@@ -116,6 +116,7 @@ footer {
   height: auto;
 
 }
+
 
 
 
