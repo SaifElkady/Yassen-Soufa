@@ -162,6 +162,8 @@
     white-space: nowrap; 
     overflow: hidden;    
     text-overflow: ellipsis; 
+    margin:20px;
+  }
 
   .works-grid {
     grid-template-columns: 1fr; /* one per row on mobile */
