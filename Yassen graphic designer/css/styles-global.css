@@ -82,6 +82,11 @@ footer {
 }
 
 /* ================= RESPONSIVE ================= */
+@media(max-width:900px) {
+  nav a {
+    scale(0.7)
+  }
+
 
 /* ================= ANIMATIONS AND SHARED CLASSES ================= */
 .fade-up {
@@ -110,3 +115,4 @@ footer {
   height: auto;
 
 }
+
