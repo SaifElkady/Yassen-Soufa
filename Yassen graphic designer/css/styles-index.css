@@ -2,7 +2,7 @@
 
 /* ================= HERO ================= */
 .hero {
-  height: 90vh;
+  height: 80vh;
   background: linear-gradient(to left, #0145cb, #2e85ff);
   display: flex;
   justify-content: center;
