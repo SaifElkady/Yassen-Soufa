@@ -151,10 +151,6 @@
 
 /* Phone Responsiveness */
 @media(max-width:768px){
-
-  .hero {
-    height: 80vh;
-  }
   
   .hero-text h1{
     position: relative;
