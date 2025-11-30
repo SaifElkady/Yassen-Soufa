@@ -85,14 +85,14 @@ footer {
 @media(max-width:900px) {
 
 
-  nav {
+  .nav {
     display: flex;
     justify-content: center;   
     align-items: center;       
     text-align: center;        
   }
 
-  nav a {
+  .nav a {
     margin: 0 10px;            
   }
 
@@ -130,6 +130,7 @@ footer {
   height: auto;
 
 }
+
 
 
 
