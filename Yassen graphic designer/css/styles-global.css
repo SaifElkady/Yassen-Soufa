@@ -82,32 +82,6 @@ footer {
 }
 
 /* ================= RESPONSIVE ================= */
-@media(max-width:900px) {
-  nav {
-    position: absolute;
-    top: 70px;
-    right: -100%;
-    background: #0057ff;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-left: 2px solid white;
-    transition: .4s;
-  }
-
-  nav a {
-    color: white;
-  }
-
-  nav.active {
-    right: 0;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-}
 
 /* ================= ANIMATIONS AND SHARED CLASSES ================= */
 .fade-up {
@@ -134,4 +108,5 @@ footer {
   display: block;
   max-width: 100%;
   height: auto;
+
 }
